@@ -1,5 +1,6 @@
-const lbfn = require('./lib/ms-load-balancer');
+const {lbfn, clearlb} = require('./lib/ms-load-balancer');
 
 module.exports = {
-  loadbalancer: lbfn
+  loadbalancer: lbfn,
+  clearlb
 };
