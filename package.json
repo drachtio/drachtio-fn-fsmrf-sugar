@@ -1,5 +1,5 @@
 {
-  "name": "drachtio-fn-get-least-loaded-ms",
+  "name": "drachtio-fn-fsmrf-sugar",
   "version": "0.0.1",
   "description": "utility functions for drachtio-fsmrf",
   "main": "app.js",
