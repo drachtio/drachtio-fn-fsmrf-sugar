@@ -1,0 +1,16 @@
+{
+  "name": "drachtio-fn-get-least-loaded-ms",
+  "version": "0.0.1",
+  "description": "utility functions for drachtio-fsmrf",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "drachtio",
+    "drachtio-fsmrf",
+    "freeswitch"
+  ],
+  "author": "Dave Horton",
+  "license": "MIT"
+}
