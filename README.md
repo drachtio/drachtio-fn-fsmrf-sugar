@@ -7,6 +7,8 @@ Utility functions for [drachtio-fsmrf](https://www.npmjs.com/package/drachtio-fs
 Class that allows you to select the least-loaded media server
 
 ```js
+const Srf = require('drachtio-srf');
+const srf = new Srf();
 const {Loadbalancer} = require('drachtio-fn-fsmrf-sugar');
 const lb = new Loadbalancer();
 /*
@@ -23,8 +25,9 @@ const lb = new Loadbalancer();
   }]
 */
 // call this once to connect to the array of media servers
-lb.start({servers, mrf});
+lb.start({servers, srf});
 
-// then call this repeatedly to the current least loaded media server
-const ms = lb.getLeastLoaded();
+// then call this to get an array of available media server, with least loaded first
+const mediaservers = lb.getLeastLoaded();
+// mediaservers[0] is the least loaded
 ```

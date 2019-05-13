@@ -1,6 +1,6 @@
 {
   "name": "drachtio-fn-fsmrf-sugar",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "utility functions for drachtio-fsmrf",
   "main": "app.js",
   "scripts": {
@@ -12,5 +12,8 @@
     "freeswitch"
   ],
   "author": "Dave Horton",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "drachtio-fsmrf": "^1.4.2"
+  }
 }
