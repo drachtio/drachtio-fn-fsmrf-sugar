@@ -1,6 +1,6 @@
 {
   "name": "drachtio-fn-fsmrf-sugar",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "utility functions for drachtio-fsmrf",
   "main": "app.js",
   "scripts": {
