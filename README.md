@@ -2,15 +2,15 @@
 
 Utility functions for [drachtio-fsmrf](https://www.npmjs.com/package/drachtio-fsmrf)
 
-## Loadbalancer
+## LoadBalancer
 
 Class that allows you to select the least-loaded media server
 
 ```js
 const Srf = require('drachtio-srf');
 const srf = new Srf();
-const {Loadbalancer} = require('drachtio-fn-fsmrf-sugar');
-const lb = new Loadbalancer();
+const {LoadBalancer} = require('drachtio-fn-fsmrf-sugar');
+const lb = new LoadBalancer();
 /*
   servers = [
   {
@@ -30,4 +30,10 @@ lb.start({servers, srf});
 // then call this to get an array of available media server, with least loaded first
 const mediaservers = lb.getLeastLoaded();
 // mediaservers[0] is the least loaded
+```
+Methods are also provided to retrieve a specific media server by either its sip signaling IP address or the IP address that its event socket has bound to:
+```
+const ms = getMsBySipAddress(addr);
+// or
+const ms = getMsByEslAddress(addr);
 ```
