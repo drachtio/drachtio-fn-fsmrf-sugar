@@ -37,3 +37,5 @@ const ms = getMsBySipAddress(addr);
 // or
 const ms = getMsByEslAddress(addr);
 ```
+
+The LoadBalancer emits a 'connect' event when at least one freeswitch is successfully connected.
