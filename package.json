@@ -13,11 +13,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davehorton/drachtio-fn-fsmrf-sugar.git"
+    "url": "git+https://github.com/drachtio/drachtio-fn-fsmrf-sugar.git"
   },
   "author": "Dave Horton",
   "license": "MIT",
   "dependencies": {
-    "drachtio-fsmrf": "^1.4.4"
+    "drachtio-fsmrf": "^2.0.2"
   }
 }
